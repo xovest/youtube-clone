@@ -2,18 +2,19 @@ import { Grid } from '@mui/material'
 import React from 'react'
 
 import youtube from './api/youtube'
+import { SearchBar, VideoDetail } from './components/'
 
 class App extends React.Component {
-  render () {
+  render() {
     return (
       <Grid justifyContent="center" container spacing={16}>
         <Grid item xs={12}>
           <Grid container spacing={16}>
             <Grid item xs={12}>
-              {/* src bar */}
+              <SearchBar />
             </Grid>
             <Grid item xs={8}>
-              {/* video details */}
+              <VideoDetail />
             </Grid>
             <Grid item xs={4}>
               {/* video list */}
